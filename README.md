@@ -1,85 +1,76 @@
-# CardYard
+# 🎮 CardYard  
 
-CardYard est un jeu de cartes multijoueur de commande développé en langage C. Il met en œuvre une logique de pioche, défausse, échange de cartes et classement final selon les scores.
-
-## 🔧 Compilation et exécution
-
-### Compiler le projet
-
-```bash
-make
-```
-
-### Exécuter le jeu
-
-```bash
-./cardyard
-```
+**CardYard** est un **jeu de cartes multijoueur** développé en **langage C** dans le cadre du module d’informatique à **CY Tech**.  
+Le projet met en œuvre la **logique de pioche, de défausse, d’échange de cartes**, et un **classement final automatique** des joueurs selon leurs scores.
 
 ---
 
-## 🧹 Nettoyage
-
-### Supprimer les fichiers objets (`.o`)
-
-```bash
-make clean
-```
-
-### Supprimer également l’exécutable
-
-```bash
-make mrproper
-```
-
----
-
-## 🕹️ Fonctionnalités
-
-- Jusqu'à **8 joueurs**
+## ⚙️ Fonctionnalités principales
+- Jusqu’à **8 joueurs**
 - **Distribution aléatoire ou personnalisée** des cartes
-- **3 variantes pour générer la pioche** :
-
-  **VALUE_FILE** : lit les valeurs et quantités de cartes depuis un fichier texte (valeurs.txt)
-
-  **VALUE_USER** : l’utilisateur entre lui-même la plage de valeurs (ex. -5 à 15) et les quantités de chaque carte
-
-  **Par défaut** : jeu classique avec les cartes proposées dans le sujet (valeurs de -2 à 12)
-
-- **Sauvegarde** et **rechargement** d’une partie en cours (`sauvegarde.txt`)
-- **Affichage visuel stylisé** des cartes et du plateau via **codes couleurs ANSI**
-- **Classement final automatique** des joueurs par score
+- **3 modes de génération de la pioche** :
+  - **VALUE_FILE** : lecture depuis un fichier texte (`valeurs.txt`)
+  - **VALUE_USER** : saisie manuelle des valeurs et quantités
+  - **Mode par défaut** : jeu classique avec des valeurs de -2 à 12
+- **Sauvegarde et rechargement** automatique des parties (`sauvegarde.txt`)
+- **Affichage stylisé** des cartes via **codes couleurs ANSI**
+- **Classement final automatique** selon les scores
 
 ---
 
-## 🗂️ Structure des fichiers
-
-- `main.c` : logique principale du jeu.
-- `cartes.h` : définitions des structures `Carte`, `Joueur`, `Pioche`.
-- `initialisation.c` : génération et distribution des cartes.
-- `affichage.c/h` : affichage du plateau, des couleurs et des scores.
-- `jeu.c` : fonctions avancées d’affichage graphique ASCII.
-- `Makefile` : automatisation de la compilation.
-
----
-
-## 💾 Sauvegarde
-
-Une sauvegarde de partie est enregistrée dans le fichier :
-
-```
-sauvegarde.txt
-```
-
-Elle est générée automatiquement si le joueur choisit l’option "Sauvegarder et quitter".
+## 🧠 Compétences et concepts techniques
+- Programmation en **langage C (standard C99)**
+- Utilisation avancée de :
+  - **Structures**, **pointeurs**, **tableaux 2D**, **fonctions**
+  - **Boucles imbriquées** et **conditions**
+  - **Gestion de fichiers (I/O)** avec `fopen`, `fprintf`, `fscanf`
+- Conception d’un **Makefile** pour automatiser la compilation
+- Application des principes de **modularité du code** (plusieurs fichiers `.c` / `.h`)
+- Gestion de projet collaboratif via **Git et GitHub**
 
 ---
 
-## 👨‍💻 Auteurs
+## 📂 Structure du projet
+├── main.c # Logique principale du jeu
+├── affichage.c/h # Affichage graphique (couleurs ANSI, scores, plateau)
+├── cartes.h # Structures des cartes, joueurs et pioche
+├── initialisation.c # Génération et distribution des cartes
+├── jeu.c # Fonctions d'affichage et logique du jeu
+├── valeurs.txt # Fichier des valeurs pour la pioche
+├── Makefile # Compilation automatisée du projet
+└── README.md # Documentation du projet
 
-Projet réalisé par :  
-**Shems BOUDJEBINA**, **Antoine BOUDON-GUILLOT**, **Taissir RGUIG**  
-Dans le cadre du module INFORMATIQUE en C — année universitaire **2024–2025**.
+yaml
+Copier le code
 
 ---
 
+## 👥 Équipe de développement
+- **Taissir Rguig** — coordination de l’équipe, logique du jeu, fonctions d’affichage  
+- **Shems Boudjebina** — conception du Makefile, structures de données, intégration du code  
+- **Antoine Boudon-Guillot** — logique de pioche et gestion de la sauvegarde  
+
+---
+
+## 🧰 Outils et technologies
+- **Langage :** C  
+- **Compilateur :** GCC  
+- **IDE / éditeurs :** Visual Studio Code, CLion, Terminal Linux  
+- **Gestion de version :** Git et GitHub  
+
+---
+
+## 🎯 Objectifs pédagogiques
+Projet académique réalisé dans le cadre du module **Informatique en C**, année universitaire **2024–2025** à **CY Tech**.  
+Il a permis de développer les compétences suivantes :
+- Rigueur algorithmique  
+- Gestion de la mémoire  
+- Travail collaboratif  
+- Documentation technique claire  
+
+---
+
+## 🇬🇧 English Summary
+**CardYard** is a **multiplayer card game** coded in **C language**, featuring draw, discard, and scoring logic.  
+It includes **file I/O**, **ANSI graphic display**, and **automated compilation** via Makefile.  
+Team project — academic work at CY Tech, academic year **2024–2025**.
