@@ -40,8 +40,7 @@ Le projet met en œuvre la **logique de pioche, de défausse, d’échange de ca
 ├── Makefile # Compilation automatisée du projet
 └── README.md # Documentation du projet
 
-yaml
-Copier le code
+
 
 ---
 
