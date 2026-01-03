@@ -55,8 +55,6 @@ Le projet a été pensé pour être **modulaire**, **lisible** et **facilement e
 
 ---
 
-## 👩‍💻 Auteur
-
-Projet réalisé par **Taissir Rguig**  
-Dans le cadre du module *Informatique en C* — **CY Tech (2024–2025)**
+## 👥 Contexte
+Projet réalisé **en groupe** dans le cadre du module *Informatique 3* — **CY Tech (2025–2026)**
 
